@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Tamari | Portfolio Kreatif</title>
+  <meta name="description" content="Portofolio Andre Tamari - Content Creator, Fotografer, Videografer, dan MS Office Specialist. Lihat karya dan pengalaman saya di sini.">
+  <meta name="keywords" content="Andre Tamari, Content Creator, Fotografer, Videografer, Portfolio, MS Office, YouTube, Instagram, TikTok">
+  <meta name="author" content="Andre Tamari">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://andretamari.github.io/portfolio/">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Andre Tamari | Portfolio Kreatif - Content Creator">
+  <meta property="og:description" content="Portofolio Andre Tamari - Content Creator, Fotografer, Videografer, dan MS Office Specialist. Lihat karya, sertifikat, dan pengalaman saya di sini.">
+  <meta property="og:image" content="https://andretamari.github.io/portfolio/assets/gw.jpg">
+  <meta property="og:url" content="https://andretamari.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Andre Tamari | Portfolio Kreatif">
+  <meta name="twitter:description" content="Portofolio Andre Tamari - Content Creator, Fotografer, Videografer, dan MS Office Specialist">
+  <meta name="twitter:image" content="https://andretamari.github.io/portfolio/assets/gw.jpg">
+  
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andre Tamari",
+    "url": "https://andretamari.github.io/portfolio/",
+    "sameAs": [
+      "https://youtube.com/@goldenriches",
+      "https://instagram.com/golden.riches",
+      "https://tiktok.com/@golden.riches"
+    ],
+    "jobTitle": "Content Creator",
+    "description": "Portofolio Andre Tamari - Content Creator, Fotografer, Videografer, dan MS Office Specialist",
+    "image": "https://andretamari.github.io/portfolio/assets/gw.jpg"
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+      color: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .language-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 8px 15px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .lang-btn.active {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .lang-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(15,15,30,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 999;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #667eea;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .hero-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-right {
+      flex: 1.2;
+      min-width: 320px;
+    }
+
+    .hero-image {
+      width: 260px;
+      height: 260px;
+      margin-bottom: 2rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #667eea;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-greeting {
+      font-size: 1.2rem;
+      color: #a0a0c0;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #a0a0c0;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(102,126,234,0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #667eea;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #667eea;
+      transform: translateY(-3px);
+    }
+
+    .about-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 2rem;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(102,126,234,0.3), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(102,126,234,0.4);
+      border-color: rgba(102,126,234,0.5);
+    }
+
+    .about-card:hover::before {
+      left: 100%;
+    }
+
+    .about-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+      color: #667eea;
+    }
+
+    .about-card h3 i {
+      margin-right: 12px;
+    }
+
+    .about-card p {
+      margin-bottom: 1rem;
+      color: #d0d0e0;
+      line-height: 1.6;
+    }
+
+    .about-card .motto {
+      font-style: italic;
+      margin: 1rem 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #a0a0c0;
+    }
+
+    .about-social {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .about-social a {
+      color: #a0a0c0;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .about-social a:hover {
+      color: #667eea;
+      transform: translateY(-3px);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .skills {
+      padding: 80px 0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background: rgba(255,255,255,0.05);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(102,126,234,0.2), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .skill-card:hover::before {
+      left: 100%;
+    }
+
+    .skill-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 25px rgba(102,126,234,0.3);
+    }
+
+    .skill-card i {
+      font-size: 3rem;
+      color: #667eea;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .skill-card p {
+      color: #a0a0c0;
+    }
+
+    .certificates {
+      padding: 80px 0;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .certs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .cert-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cert-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .cert-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(102,126,234,0.3);
+    }
+
+    .cert-placeholder {
+      aspect-ratio: 1.4;
+      background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cert-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cert-placeholder i {
+      font-size: 4rem;
+      color: #667eea;
+      margin-bottom: 1rem;
+    }
+
+    .cert-card h3 {
+      padding: 1rem 1rem 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .cert-card p {
+      padding: 0 1rem 1rem;
+      color: #a0a0c0;
+      font-size: 0.9rem;
+    }
+
+    .cert-link {
+      display: inline-block;
+      padding: 0.5rem 1rem 1rem;
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .gallery {
+      padding: 80px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(102,126,234,0.3);
+    }
+
+    .gallery-placeholder {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-placeholder i {
+      font-size: 3rem;
+      color: #667eea;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-item h3 {
+      padding: 1rem 1rem 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .gallery-item p {
+      padding: 0 1rem 1rem;
+      color: #a0a0c0;
+      font-size: 0.9rem;
+    }
+
+    .gallery-link {
+      display: inline-block;
+      padding: 0.5rem 1rem 1rem;
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact {
+      padding: 80px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      display: block;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(102,126,234,0.3), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .contact-card:hover::before {
+      left: 100%;
+    }
+
+    .contact-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(102,126,234,0.4);
+      border-color: rgba(102,126,234,0.5);
+    }
+
+    .contact-card i {
+      font-size: 2.5rem;
+      color: #667eea;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-card p {
+      font-size: 0.8rem;
+      color: #a0a0c0;
+      word-break: break-word;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .intro-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.8s ease;
+      opacity: 1;
+    }
+
+    .intro-overlay.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .intro-content {
+      text-align: center;
+      animation: zoomOutText 0.8s ease forwards;
+    }
+
+    @keyframes zoomOutText {
+      from {
+        opacity: 0;
+        transform: scale(1.4);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .social-icons-intro {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .social-icons-intro i {
+      font-size: 3rem;
+      color: #a0a0c0;
+      animation: floatIcon 1.5s ease-in-out infinite;
+    }
+
+    .social-icons-intro i:nth-child(1) { animation-delay: 0s; }
+    .social-icons-intro i:nth-child(2) { animation-delay: 0.2s; }
+    .social-icons-intro i:nth-child(3) { animation-delay: 0.4s; }
+    .social-icons-intro i:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0px); opacity: 0.6; }
+      50% { transform: translateY(-10px); opacity: 1; }
+    }
+
+    .intro-text {
+      font-size: 2rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 2px;
+    }
+
+    body.intro-active {
+      overflow: hidden;
+    }
+
+    .main-content {
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .main-content.visible {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .hero-flex {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      
+      .hero-left, .hero-right {
+        text-align: center;
+      }
+      
+      .hero-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+      }
+      
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-buttons {
+        justify-content: center;
+      }
+      
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      
+      .language-toggle {
+        top: 70px;
+      }
+
+      .certs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body class="intro-active">
+  <div id="introOverlay" class="intro-overlay">
+    <div class="intro-content">
+      <div class="social-icons-intro">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <div class="intro-text">Welcome to my portfolio</div>
+    </div>
+  </div>
+
+  <div id="mainContent" class="main-content">
+    <div class="language-toggle">
+      <button class="lang-btn active" data-lang="id">🇮🇩 ID</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">Andre Tamari</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link" data-key="nav-home">Beranda</a></li>
+          <li><a href="#skills" class="nav-link" data-key="nav-skills">Keahlian</a></li>
+          <li><a href="#certificates" class="nav-link" data-key="nav-cert">Sertifikat</a></li>
+          <li><a href="#gallery" class="nav-link" data-key="nav-gallery">Pengalaman</a></li>
+          <li><a href="#contact" class="nav-link" data-key="nav-contact">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-flex">
+          <div class="hero-left">
+            <div class="hero-image">
+              <img src="assets/gw.jpg" alt="Andre Tamari" onerror="this.src='https://placehold.co/400x400/667eea/white?text=Andre'">
+            </div>
+            <div class="hero-greeting" data-key="hero-greeting">👋 Halo, Nama Saya</div>
+            <h1 class="hero-title"><span class="highlight">Andre Tamari</span></h1>
+            <p class="hero-subtitle" data-key="hero-role">Kreator Konten | Fotografer | Videografer | Spesialis MS Office</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary" data-key="hero-contact">Hubungi Saya</a>
+              <a href="#gallery" class="btn btn-secondary" data-key="hero-gallery">Lihat Karya</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="about-card">
+              <h3><i class="fas fa-user-astronaut"></i> <span data-key="about-title">Tentang Saya</span></h3>
+              <p data-key="about-desc1">Halo, perkenalkan! Nama saya Andre Tamari. Saya adalah seorang mahasiswa Ilmu Komputer yang memiliki minat besar di industri kreatif, khususnya dalam bidang fotografi dan videografi.</p>
+              <p data-key="about-desc2">Perjalanan saya sebagai content creator dimulai sejak tahun 2018 di platform YouTube dengan fokus pada konten gaming. Saat ini, saya sedang hiatus dari YouTube karena keterbatasan perangkat dan memilih untuk aktif sebagai vlogger di TikTok sejak awal tahun 2026. Target saya adalah membangun audiens yang kuat dan mengumpulkan modal agar bisa meningkatkan kualitas perangkat demi melanjutkan kembali impian saya di YouTube Gaming.</p>
+              <p data-key="about-desc3">Selain di dunia kreatif, saya juga menguasai kemampuan dasar Microsoft Office (seperti Excel dan Word) untuk kebutuhan administrasi profesional. Dengan kombinasi keahlian teknis dan kreativitas ini, saya siap berkontribusi aktif dan menyukseskan berbagai proyek di masa depan.</p>
+              <p class="motto" data-key="about-motto">"Jika kamu tidak bisa menghasilkan uang disaat kamu tidur, kamu harus bekerja sampai mati" - Warren Buffett</p>
+              <div class="about-social">
+                <a href="https://youtube.com/@goldenriches" target="_blank"><i class="fab fa-youtube"></i> <span data-key="social-youtube">YouTube</span></a>
+                <a href="https://instagram.com/golden.riches" target="_blank"><i class="fab fa-instagram"></i> <span data-key="social-instagram">Instagram</span></a>
+                <a href="https://tiktok.com/@golden.riches" target="_blank"><i class="fab fa-tiktok"></i> <span data-key="social-tiktok">TikTok</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title" data-key="skills-title">⚡ Keahlian Saya</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-animate>
+            <i class="fab fa-youtube"></i>
+            <h3 data-key="skill-content">Konten Kreator</h3>
+            <p data-key="skill-content-desc">Berpengalaman sejak 2018 dalam memproduksi konten video digital yang menarik, adaptif terhadap tren platform (YouTube & TikTok), serta mampu membangun interaksi audiens (engagement).</p>
+          </div>
+          <div class="skill-card" data-animate>
+            <i class="fas fa-camera-retro"></i>
+            <h3 data-key="skill-photo">Fotografi & Videografi</h3>
+            <p data-key="skill-photo-desc">Menguasai teknik pengambilan gambar, komposisi visual, dan pencahayaan untuk menghasilkan aset dokumentasi serta materi promosi yang estetis dan bercerita.</p>
+          </div>
+          <div class="skill-card" data-animate>
+            <i class="fas fa-file-excel"></i>
+            <h3 data-key="skill-excel">Analisis Data (MS Excel)</h3>
+            <p data-key="skill-excel-desc">Mahir dalam mengolah data kuantitatif, menerapkan rumus/formula kompleks, serta menyajikan visualisasi data (dashboard) untuk mendukung pengambilan keputusan.</p>
+          </div>
+          <div class="skill-card" data-animate>
+            <i class="fas fa-file-word"></i>
+            <h3 data-key="skill-word">Manajemen Dokumen (MS Word)</h3>
+            <p data-key="skill-word-desc">Ahli dalam penyusunan dokumen formal, otomatisasi surat-menyurat (mail merge), serta penerapan format standar profesional skala besar.</p>
+          </div>
+          <div class="skill-card" data-animate>
+            <i class="fas fa-music"></i>
+            <h3 data-key="skill-music">Seni Musik</h3>
+            <p data-key="skill-music-desc">Kemampuan memainkan instrumen musik dan mengasah kreativitas, kepekaan estetika, sekaligus menjadi sarana manajemen stres yang efektif.</p>
+          </div>
+          <div class="skill-card" data-animate>
+            <i class="fas fa-utensils"></i>
+            <h3 data-key="skill-cooking">Kreativitas Kuliner</h3>
+            <p data-key="skill-cooking-desc">Memiliki ketertarikan dan keterampilan dalam mengeksplorasi berbagai resep masakan, melatih fokus, detail, dan manajemen waktu di dapur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+      <div class="container">
+        <h2 class="section-title" data-key="cert-title">📜 Sertifikat</h2>
+        <div class="certs-grid">
+          <div class="cert-card" data-animate>
+            <div class="cert-placeholder">
+              <img src="assets/sertifikat5.jpeg" alt="Foundations of Cybersecurity Google" onerror="this.parentElement.innerHTML='<i class=\'fas fa-certificate\'></i><p>Sertifikat akan tampil di sini</p>'">
+            </div>
+            <h3 data-key="cert-google">Sertifikasi Profesional: Foundations of Cybersecurity (Google/Coursera)</h3>
+            <p data-key="cert-google-desc">Sertifikasi resmi yang memvalidasi pemahaman mendalam tentang keamanan digital, analisis risiko, jaringan, serta fundamental keamanan informasi yang relevan dengan latar belakang studi Ilmu Komputer saya.</p>
+            <a href="assets/sertifikat5.jpeg" class="cert-link" target="_blank" data-key="cert-link">Lihat Sertifikat →</a>
+          </div>
+          <div class="cert-card" data-animate>
+            <div class="cert-placeholder">
+              <img src="assets/sertifikat1.jpeg" alt="Sertifikat Tenaga Pengajar" onerror="this.parentElement.innerHTML='<i class=\'fas fa-certificate\'></i><p>Sertifikat akan tampil di sini</p>'">
+            </div>
+            <h3 data-key="cert-teacher">Sertifikat Tenaga Pengajar (Yayasan Al-Furqon)</h3>
+            <p data-key="cert-teacher-desc">Penghargaan atas dedikasi dan kontribusi nyata sebagai tenaga pengajar/Guru Bahasa Inggris tingkat SMP/SMA. Pengalaman ini mengasah kemampuan komunikasi, manajemen kelas, kepemimpinan, dan tanggung jawab emosional saya.</p>
+            <a href="assets/sertifikat1.jpeg" class="cert-link" target="_blank" data-key="cert-link">Lihat Sertifikat →</a>
+          </div>
+          <div class="cert-card" data-animate>
+            <div class="cert-placeholder">
+              <img src="assets/sertifikat2.jpeg" alt="Sertifikat Seminar Public Speaking" onerror="this.parentElement.innerHTML='<i class=\'fas fa-certificate\'></i><p>Sertifikat akan tampil di sini</p>'">
+            </div>
+            <h3 data-key="cert-public">Sertifikat Seminar Nasional Public Speaking</h3>
+            <p data-key="cert-public-desc">Bukti partisipasi aktif dalam pelatihan komunikasi publik berskala nasional untuk mendalami teknik Jago Berbicara di Depan Umum, yang sangat mendukung peran saya sebagai kreator konten dan pembicara.</p>
+            <a href="assets/sertifikat2.jpeg" class="cert-link" target="_blank" data-key="cert-link">Lihat Sertifikat →</a>
+          </div>
+          <div class="cert-card" data-animate>
+            <div class="cert-placeholder">
+              <img src="assets/sertifikat3.jpeg" alt="Peringkat 3 Kelas 12 SMA" onerror="this.parentElement.innerHTML='<i class=\'fas fa-certificate\'></i><p>Sertifikat akan tampil di sini</p>'">
+            </div>
+            <h3 data-key="cert-rank">Penghargaan Prestasi Akademik (Peringkat 3 Kelas XII SMAN 9 Kabupaten Tangerang)</h3>
+            <p data-key="cert-rank-desc">Apresiasi atas pencapaian akademik dengan meraih peringkat 3 besar di masa akhir sekolah menengah, mencerminkan konsistensi, kedisiplinan, dan kerja keras dalam belajar.</p>
+            <a href="assets/sertifikat3.jpeg" class="cert-link" target="_blank" data-key="cert-link">Lihat Sertifikat →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title" data-key="gallery-title">🎬 Pengalaman Karya</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-animate>
+            <div class="gallery-placeholder">
+              <img src="assets/pengalaman1.jpeg" alt="Foto bersama murid-murid SMA" onerror="this.parentElement.innerHTML='<i class=\'fas fa-camera\'></i><p>Foto akan tampil</p>'">
+            </div>
+            <h3 data-key="exp-teacher">Tenaga Pendidik / Guru Bahasa Inggris</h3>
+            <p data-key="exp-teacher-desc">Berpengalaman dalam merancang materi pembelajaran, mengelola kelas, serta mengajar siswa tingkat SMP/SMA. Pengalaman ini mengasah kemampuan komunikasi interpersonal dan kepemimpinan saya.</p>
+            <a href="assets/pengalaman1.jpeg" class="gallery-link" target="_blank" data-key="gallery-link">Lihat Foto →</a>
+          </div>
+          <div class="gallery-item" data-animate>
+            <div class="gallery-placeholder">
+              <img src="assets/pengalaman2.jpeg" alt="Narasumber MBG" onerror="this.parentElement.innerHTML='<i class=\'fas fa-microphone\'></i><p>Foto akan tampil</p>'">
+            </div>
+            <h3 data-key="exp-mc">Narasumber & Moderator Acara Peresmian Makan Bergizi Gratis</h3>
+            <p data-key="exp-mc-desc">Dipercaya untuk memandu dan menjadi narasumber dalam acara pengesahan program Makan Bergizi Gratis (MBG), mengaplikasikan keahlian public speaking dan manajemen audiens dalam forum formal.</p>
+            <a href="assets/pengalaman2.jpeg" class="gallery-link" target="_blank" data-key="gallery-link">Lihat Foto →</a>
+          </div>
+          <div class="gallery-item" data-animate>
+            <div class="gallery-placeholder">
+              <img src="assets/pengalaman3.jpeg" alt="Pelatih Marching Band" onerror="this.parentElement.innerHTML='<i class=\'fas fa-music\'></i><p>Foto akan tampil</p>'">
+            </div>
+            <h3 data-key="exp-band">Pelatih & Instruktur Marching Band</h3>
+            <p data-key="exp-band-desc">Memimpin, melatih, dan menyusun strategi performa tim ekstrakurikuler marching band. Fokus pada pengembangan kedisiplinan, kerja sama tim, serta penyelarasan estetika musik dan gerakan.</p>
+            <a href="assets/pengalaman3.jpeg" class="gallery-link" target="_blank" data-key="gallery-link">Lihat Foto →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-key="contact-title">📞 Hubungi Saya</h2>
+        <div class="contact-grid">
+          <a href="mailto:andretamari98893@gmail.com" class="contact-card" data-animate target="_blank">
+            <i class="fas fa-envelope"></i>
+            <h3 data-key="contact-email">Email</h3>
+            <p>andretamari98893@gmail.com</p>
+          </a>
+          <a href="https://youtube.com/@goldenriches" class="contact-card" data-animate target="_blank">
+            <i class="fab fa-youtube"></i>
+            <h3 data-key="contact-youtube">YouTube</h3>
+            <p>goldenriches</p>
+          </a>
+          <a href="https://instagram.com/golden.riches" class="contact-card" data-animate target="_blank">
+            <i class="fab fa-instagram"></i>
+            <h3 data-key="contact-ig">Instagram</h3>
+            <p>golden.riches</p>
+          </a>
+          <a href="https://tiktok.com/@golden.riches" class="contact-card" data-animate target="_blank">
+            <i class="fab fa-tiktok"></i>
+            <h3 data-key="contact-tiktok">TikTok</h3>
+            <p>golden.riches</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="currentYear"></span> Andre Tamari. <span data-key="footer-rights">Semua Hak Dilindungi.</span></p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year otomatis
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+            const translations = {
+      id: {
+        'nav-home': 'Beranda',
+        'nav-skills': 'Keahlian',
+        'nav-cert': 'Sertifikat',
+        'nav-gallery': 'Pengalaman',
+        'nav-contact': 'Kontak',
+        'hero-greeting': '👋 Halo, Nama Saya',
+        'hero-role': 'Kreator Konten | Fotografer | Videografer | Spesialis MS Office',
+        'hero-contact': 'Hubungi Saya',
+        'hero-gallery': 'Lihat Karya',
+        'about-title': 'Tentang Saya',
+        'about-desc1': 'Halo, perkenalkan! Nama saya Andre Tamari. Saya adalah seorang mahasiswa Ilmu Komputer yang memiliki minat besar di industri kreatif, khususnya dalam bidang fotografi dan videografi.',
+        'about-desc2': 'Perjalanan saya sebagai content creator dimulai sejak tahun 2018 di platform YouTube dengan fokus pada konten gaming. Saat ini, saya sedang hiatus dari YouTube karena keterbatasan perangkat dan memilih untuk aktif sebagai vlogger di TikTok sejak awal tahun 2026. Target saya adalah membangun audiens yang kuat dan mengumpulkan modal agar bisa meningkatkan kualitas perangkat demi melanjutkan kembali impian saya di YouTube Gaming.',
+        'about-desc3': 'Selain di dunia kreatif, saya juga menguasai kemampuan dasar Microsoft Office (seperti Excel dan Word) untuk kebutuhan administrasi profesional. Dengan kombinasi keahlian teknis dan kreativitas ini, saya siap berkontribusi aktif dan menyukseskan berbagai proyek di masa depan.',
+        'about-motto': '"Jika kamu tidak bisa menghasilkan uang disaat kamu tidur, kamu harus bekerja sampai mati" - Warren Buffett',
+        'social-youtube': 'YouTube',
+        'social-instagram': 'Instagram',
+        'social-tiktok': 'TikTok',
+        'skills-title': '⚡ Keahlian Saya',
+        'skill-content': 'Konten Kreator',
+        'skill-content-desc': 'Berpengalaman sejak 2018 dalam memproduksi konten video digital yang menarik, adaptif terhadap tren platform (YouTube & TikTok), serta mampu membangun interaksi audiens (engagement).',
+        'skill-photo': 'Fotografi & Videografi',
+        'skill-photo-desc': 'Menguasai teknik pengambilan gambar, komposisi visual, dan pencahayaan untuk menghasilkan aset dokumentasi serta materi promosi yang estetis dan bercerita.',
+        'skill-excel': 'Analisis Data (MS Excel)',
+        'skill-excel-desc': 'Mahir dalam mengolah data kuantitatif, menerapkan rumus/formula kompleks, serta menyajikan visualisasi data (dashboard) untuk mendukung pengambilan keputusan.',
+        'skill-word': 'Manajemen Dokumen (MS Word)',
+        'skill-word-desc': 'Ahli dalam penyusunan dokumen formal, otomatisasi surat-menyurat (mail merge), serta penerapan format standar profesional skala besar.',
+        'skill-music': 'Seni Musik',
+        'skill-music-desc': 'Kemampuan memainkan instrumen musik dan mengasah kreativitas, kepekaan estetika, sekaligus menjadi sarana manajemen stres yang efektif.',
+        'skill-cooking': 'Kreativitas Kuliner',
+        'skill-cooking-desc': 'Memiliki ketertarikan dan keterampilan dalam mengeksplorasi berbagai resep masakan, melatih fokus, detail, dan manajemen waktu di dapur.',
+        'cert-title': '📜 Sertifikat',
+        'cert-google': 'Sertifikasi Profesional: Foundations of Cybersecurity (Google/Coursera)',
+        'cert-google-desc': 'Sertifikasi resmi yang memvalidasi pemahaman mendalam tentang keamanan digital, analisis risiko, jaringan, serta fundamental keamanan informasi yang relevan dengan latar belakang studi Ilmu Komputer saya.',
+        'cert-teacher': 'Sertifikat Tenaga Pengajar (Yayasan Al-Furqon)',
+        'cert-teacher-desc': 'Penghargaan atas dedikasi dan kontribusi nyata sebagai tenaga pengajar/Guru Bahasa Inggris tingkat SMP/SMA. Pengalaman ini mengasah kemampuan komunikasi, manajemen kelas, kepemimpinan, dan tanggung jawab emosional saya.',
+        'cert-public': 'Sertifikat Seminar Nasional Public Speaking',
+        'cert-public-desc': 'Bukti partisipasi aktif dalam pelatihan komunikasi publik berskala nasional untuk mendalami teknik Jago Berbicara di Depan Umum, yang sangat mendukung peran saya sebagai kreator konten dan pembicara.',
+        'cert-rank': 'Penghargaan Prestasi Akademik (Peringkat 3 Kelas XII SMAN 9 Kabupaten Tangerang)',
+        'cert-rank-desc': 'Apresiasi atas pencapaian akademik dengan meraih peringkat 3 besar di masa akhir sekolah menengah, mencerminkan konsistensi, kedisiplinan, dan kerja keras dalam belajar.',
+        'cert-link': 'Lihat Sertifikat →',
+        'gallery-title': '🎬 Pengalaman Karya',
+        'exp-teacher': 'Tenaga Pendidik / Guru Bahasa Inggris',
+        'exp-teacher-desc': 'Berpengalaman dalam merancang materi pembelajaran, mengelola kelas, serta mengajar siswa tingkat SMP/SMA. Pengalaman ini mengasah kemampuan komunikasi interpersonal dan kepemimpinan saya.',
+        'exp-mc': 'Narasumber & Moderator Acara Peresmian Makan Bergizi Gratis',
+        'exp-mc-desc': 'Dipercaya untuk memandu dan menjadi narasumber dalam acara pengesahan program Makan Bergizi Gratis (MBG), mengaplikasikan keahlian public speaking dan manajemen audiens dalam forum formal.',
+        'exp-band': 'Pelatih & Instruktur Marching Band',
+        'exp-band-desc': 'Memimpin, melatih, dan menyusun strategi performa tim ekstrakurikuler marching band. Fokus pada pengembangan kedisiplinan, kerja sama tim, serta penyelarasan estetika musik dan gerakan.',
+        'gallery-link': 'Lihat Foto →',
+        'contact-title': '📞 Hubungi Saya',
+        'contact-email': 'Email',
+        'contact-youtube': 'YouTube',
+        'contact-ig': 'Instagram',
+        'contact-tiktok': 'TikTok',
+        'footer-rights': 'Semua Hak Dilindungi.'
+      },
+      en: {
+        'nav-home': 'Home',
+        'nav-skills': 'Skills',
+        'nav-cert': 'Certificates',
+        'nav-gallery': 'Experience',
+        'nav-contact': 'Contact',
+        'hero-greeting': '👋 Hello, My Name Is',
+        'hero-role': 'Content Creator | Photographer | Videographer | MS Office Specialist',
+        'hero-contact': 'Contact Me',
+        'hero-gallery': 'View Work',
+        'about-title': 'About Me',
+        'about-desc1': 'Hello! My name is Andre Tamari. I am a Computer Science student with a great passion for the creative industry, especially in photography and videography.',
+        'about-desc2': 'My journey as a content creator started in 2018 on YouTube focusing on gaming content. Currently, I am on hiatus from YouTube due to device limitations and choose to be active as a vlogger on TikTok since early 2026. My target is to build a strong audience and raise funds to improve my equipment to continue my dreams on YouTube Gaming.',
+        'about-desc3': 'Besides the creative world, I also master basic Microsoft Office skills (such as Excel and Word) for professional administrative needs. With this combination of technical skills and creativity, I am ready to actively contribute and succeed in various future projects.',
+        'about-motto': '"If you don\'t find a way to make money while you sleep, you will work until you die" - Warren Buffett',
+        'social-youtube': 'YouTube',
+        'social-instagram': 'Instagram',
+        'social-tiktok': 'TikTok',
+        'skills-title': '⚡ My Skills',
+        'skill-content': 'Content Creator',
+        'skill-content-desc': 'Experienced since 2018 in producing engaging digital video content, adaptive to platform trends (YouTube & TikTok), and able to build audience engagement.',
+        'skill-photo': 'Photography & Videography',
+        'skill-photo-desc': 'Mastering shooting techniques, visual composition, and lighting to produce aesthetic and storytelling documentation assets and promotional materials.',
+        'skill-excel': 'Data Analysis (MS Excel)',
+        'skill-excel-desc': 'Proficient in processing quantitative data, applying complex formulas, and presenting data visualizations (dashboards) to support decision making.',
+        'skill-word': 'Document Management (MS Word)',
+        'skill-word-desc': 'Expert in preparing formal documents, mail merge automation, and applying professional standard formats on a large scale.',
+        'skill-music': 'Music Arts',
+        'skill-music-desc': 'Ability to play musical instruments that hone creativity, aesthetic sensitivity, as well as being an effective stress management tool.',
+        'skill-cooking': 'Culinary Creativity',
+        'skill-cooking-desc': 'Have an interest and skills in exploring various recipes, training focus, detail, and time management in the kitchen.',
+        'cert-title': '📜 Certificates',
+        'cert-google': 'Professional Certificate: Foundations of Cybersecurity (Google/Coursera)',
+        'cert-google-desc': 'An official certification that validates a deep understanding of digital security, risk analysis, networking, and information security fundamentals relevant to my Computer Science background.',
+        'cert-teacher': 'Teaching Certificate (Al-Furqon Foundation)',
+        'cert-teacher-desc': 'An award for dedication and real contribution as a teacher/English teacher for junior/senior high school level. This experience honed my communication skills, classroom management, leadership, and emotional responsibility.',
+        'cert-public': 'National Seminar Certificate on Public Speaking',
+        'cert-public-desc': 'Proof of active participation in national-scale public communication training to explore techniques for Mastering Speaking in Public, which greatly supports my role as a content creator and speaker.',
+        'cert-rank': 'Academic Achievement Award (Rank 3 of Class XII SMAN 9 Kabupaten Tangerang)',
+        'cert-rank-desc': 'Appreciation for academic achievement by achieving the top 3 rankings at the end of high school, reflecting consistency, discipline, and hard work in learning.',
+        'cert-link': 'View Certificate →',
+        'gallery-title': '🎬 Work Experience',
+        'exp-teacher': 'Educator / English Teacher',
+        'exp-teacher-desc': 'Experienced in designing learning materials, managing classes, and teaching junior/senior high school students. This experience honed my interpersonal communication and leadership skills.',
+        'exp-mc': 'Speaker & Moderator of Free Nutritious Meal Inauguration Event',
+        'exp-mc-desc': 'Trusted to host and be a speaker at the ratification event of the Free Nutritious Meal (MBG) program, applying public speaking and audience management skills in a formal forum.',
+        'exp-band': 'Marching Band Coach & Instructor',
+        'exp-band-desc': 'Leading, training, and strategizing the performance of the marching band extracurricular team. Focus on developing discipline, teamwork, and alignment of musical aesthetics and movement.',
+        'gallery-link': 'View Photo →',
+        'contact-title': '📞 Contact Me',
+        'contact-email': 'Email',
+        'contact-youtube': 'YouTube',
+        'contact-ig': 'Instagram',
+        'contact-tiktok': 'TikTok',
+        'footer-rights': 'All Rights Reserved.'
+      }
+    };
+    let currentLang = 'id';
+
+    function updateLanguage(lang) {
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (translations[lang][key]) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = translations[lang][key];
+          } else {
+            el.textContent = translations[lang][key];
+          }
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentLang = btn.getAttribute('data-lang');
+        updateLanguage(currentLang);
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const animateElements = document.querySelectorAll('[data-animate]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    animateElements.forEach(el => {
+      observer.observe(el);
+    });
+
+    setTimeout(() => {
+      const intro = document.getElementById('introOverlay');
+      const mainContent = document.getElementById('mainContent');
+      
+      intro.classList.add('fade-out');
+      mainContent.classList.add('visible');
+      document.body.classList.remove('intro-active');
+      
+      setTimeout(() => {
+        intro.style.display = 'none';
+      }, 800);
+    }, 1600);
+  </script>
+</body>
+</html>
